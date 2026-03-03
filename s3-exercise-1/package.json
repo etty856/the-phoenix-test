@@ -1,0 +1,19 @@
+{
+  "name": "s3-exercise-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1000.0",
+    "dotenv": "^17.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.2"
+  }
+}
