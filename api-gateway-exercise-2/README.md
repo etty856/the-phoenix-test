@@ -61,7 +61,7 @@ This ensures that the API Gateway POST method is correctly linked to your Lambda
 1. Go to the **API Gateway Console.**
 2. Click **Create API** and choose **REST API**.
 3. Select **Import Api**, click **choose file**
-4. **Note on UI Changes:** Originally, the plan was to import the definition directly from an **S3 Bucket URL**. However, due to recent changes in the **AWS Console UI**, the "Import from S3" option is no longer easily accessible in certain regions/views.
+4. **Note on UI Changes:** Originally, the plan was to import the definition directly from an **S3 Bucket URL**. However, due to recent changes in the **AWS Console UI**, the "Import from S3" option is no longer accessible.
 5. Please upload the `the-phoenix-test-post.yaml` file directly from this repository's local folder.
 
 ### 5. Final Integration
@@ -122,3 +122,4 @@ X-Amzn-Trace-Id: Root=1-69a8b67f-6395bb1b1c4fe9744e9208ba;Parent=277796bfb1dca1e
 
 {"message":"Candidate created successfully"}
 ```
+
