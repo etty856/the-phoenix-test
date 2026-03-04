@@ -1,4 +1,5 @@
-# The Phoenix Home Assignment
+# The Phoenix Insurance Company LTD
+## Home Assignment
 
 This repository contains the solution for the Phoenix home assignment for backend developer open role.
 
