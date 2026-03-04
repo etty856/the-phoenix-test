@@ -1,8 +1,8 @@
 {
   "name": "s3-exercise-1",
   "version": "1.0.0",
-  "description": "",
-  "main": "fetch.js",
+  "description": "A Node.js application for interacting with AWS S3- uplaod and fetch JSON files",
+  "main": "upload.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
