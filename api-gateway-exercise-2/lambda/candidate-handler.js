@@ -50,7 +50,7 @@ module.exports.create = async (event, context) => {
         };
 
     } catch (error) {
-        console.error(`[CREATE] An error occured`);
+        console.error(`[CREATE] An error occurred. error message: ${error.message}`);
 
         return {
             statusCode: 500,
