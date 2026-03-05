@@ -1,0 +1,13 @@
+{
+    "name": "the-phoenix-test-post-handler",
+    "version": "1.0.0",
+    "description": "AWS lambda that processes POST request",
+    "main": "candidate-handler.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Etty Rosenthal",
+    "license": "ISC"
+  }
+  

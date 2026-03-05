@@ -1,0 +1,41 @@
+openapi: 3.0.1
+info:
+  title: The-Phoenix-Test
+  description: A sample API for the Phoenix home assignment
+  version: 1.0.0
+
+paths:
+  /candidate:
+    post:
+      summary: Create a new candidate
+      operationId: createCandidate
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Candidate'
+      responses:
+        "201":
+          description: Created
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+
+      x-amazon-apigateway-integration:
+        type: aws_proxy
+        httpMethod: POST
+        uri: arn:aws:apigateway:<your_region>:lambda:path/2015-03-31/functions/<your_lambda_arn>/invocations
+
+components:
+  schemas:
+    Candidate:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          description: The candidate's name
+          example: Etty Rosenthal
