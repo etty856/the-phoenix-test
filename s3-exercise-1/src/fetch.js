@@ -25,7 +25,7 @@ async function execute() {
     console.log(`JSON file fetched from ${bucketName} \nraw content is: ${data}`)
     console.log(`beutify content is \n${JSON.stringify(data, null, 2)}`)
 
-  } catch (error) {
+  } catch (err) {
     console.error('main S3 fetch function failed:', err.message);
   }
 }
