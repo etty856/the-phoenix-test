@@ -16,10 +16,10 @@ The project is intentionally minimal while following production-oriented best pr
 
 ## Tech Stack
 
-- Node.js (v18 or higher)  
+- Node.js 20.x (recommended)  
 - AWS SDK for JavaScript (v3)  
 - Amazon S3  
-- Amazon IAM user  
+- IAM User with programmatic access 
 
 ---
 
@@ -100,7 +100,7 @@ node src/upload.js
 ```
 
 ### 8. Fetch JSON from S3
-Fetch and parse the JSON file as specefied in your .env from AWS S3 bucket using AWS SDK
+Fetch and parse the JSON file as specified in your .env from AWS S3 bucket using AWS SDK
 Run this in terminal
 ```
 node src/fetch.js
@@ -174,15 +174,7 @@ creating S3Service instance.
  Name of S3 bucket to interact with is the-phoenix-test-etty
 fetching file: the-phoenix-test-sample.json from bucket: the-phoenix-test-etty
 S3Service/fetch start            
-send command to AWS       
-(node:19124) Warning: NodeDeprecationWarning: The AWS SDK for JavaScript (v3) will
-no longer support Node.js v18.15.0 in January 2026.
-
-To continue receiving updates to AWS services, bug fixes, and security
-updates please upgrade to a supported Node.js LTS version.
-
-More information can be found at: https://a.co/c895JFp
-(Use `node --trace-warnings ...` to show where the warning was created)
+send command to AWS    
 successfully fetched from S3
 JSON file fetched from the-phoenix-test-etty
 beutify content is
@@ -192,4 +184,5 @@ beutify content is
   "open_position": "AWS Backend Developer"
 }
 ```
+
 
