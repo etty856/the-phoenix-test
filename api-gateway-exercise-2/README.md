@@ -58,10 +58,17 @@ This ensures that the API Gateway POST method is correctly linked to your Lambda
 - Upload `the-phoenix-test-post.yaml` to your S3 bucket manually.
 
 ### 4. API Gateway Configuration
+
+#### Note:
+The assignment required importing the OpenAPI definition from an S3 bucket.
+
+The file was uploaded to S3 as required.  
+During the API creation process, the AWS Console did not provide an option to import the definition directly from S3.
+
+As a result, the YAML definition was imported via the local file upload option.
 1. Go to the **API Gateway Console.**
 2. Click **Create API** and choose **REST API**.
 3. Select **Import Api**, click **choose file**
-4. **Note on UI Changes:** Originally, the plan was to import the definition directly from an **S3 Bucket URL**. However, due to recent changes in the **AWS Console UI**, the "Import from S3" option is no longer accessible.
 5. Please upload the `the-phoenix-test-post.yaml` file directly from this repository's local folder.
 
 ### 5. Final Integration
@@ -122,4 +129,5 @@ X-Amzn-Trace-Id: Root=1-69a8b67f-6395bb1b1c4fe9744e9208ba;Parent=277796bfb1dca1e
 
 {"message":"Candidate created successfully"}
 ```
+
 
