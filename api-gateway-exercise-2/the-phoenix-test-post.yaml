@@ -26,7 +26,7 @@ paths:
       x-amazon-apigateway-integration:
         type: aws_proxy
         httpMethod: POST
-        uri: arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:886725800208:function:the-phoenix-test-post-handler/invocations
+        uri: arn:aws:apigateway:<your_region>:lambda:path/2015-03-31/functions/<your_lambda_arn>/invocations
 
 components:
   schemas:
