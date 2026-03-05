@@ -22,7 +22,7 @@ async function execute() {
     console.log('successfully fetched from S3');
     
     //view data in console
-    console.log(`JSON file fetched from ${bucketName} \nraw content is: ${data}`)
+    console.log(`JSON file fetched from ${bucketName}`)
     console.log(`beutify content is \n${JSON.stringify(data, null, 2)}`)
 
   } catch (err) {
