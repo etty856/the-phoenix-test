@@ -30,7 +30,7 @@ async function execute() {
     await service.upload(key, JSON.stringify(data));
     console.log('successfully uploaded to S3');
   } catch (err) {
-    console.error('main S3 update function failed:', err.message);
+    console.error('main S3 upload function failed:', err.message);
   }
 }
 
