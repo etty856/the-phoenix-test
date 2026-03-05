@@ -184,8 +184,7 @@ updates please upgrade to a supported Node.js LTS version.
 More information can be found at: https://a.co/c895JFp
 (Use `node --trace-warnings ...` to show where the warning was created)
 successfully fetched from S3
-JSON file fetched from the-phoenix-test-etty 
-raw content is: [object Object]
+JSON file fetched from the-phoenix-test-etty
 beutify content is
 {
   "name": "Etty Rosenthal",
@@ -193,3 +192,4 @@ beutify content is
   "open_position": "AWS Backend Developer"
 }
 ```
+
