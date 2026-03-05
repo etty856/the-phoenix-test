@@ -26,7 +26,7 @@ The project is intentionally minimal while following production-oriented best pr
 ## Prerequisites
 
 - AWS Account  
-- Node.js installed (v18+)  
+- Node.js installed (v20.x recommended)  
 - AWS CLI configured on your machine  
 
 ---
@@ -108,12 +108,12 @@ node src/fetch.js
 
 ---
 
-## Code Structure
+## Code Structure (src)
 
-- s3Client.js — Configures the S3 client
-- s3Service.js — Encapsulates upload/fetch functions
-- upload.js — Uses s3Service.upload() to upload JSON file
-- fetch.js — Uses s3Service.fetch() to retrieve and parse JSON
+- `s3Client.js` — Configures the S3 client
+- `s3Service.js` — Encapsulates upload/fetch functions
+- `upload.js` — Uses s3Service.upload() to upload JSON file
+- `fetch.js` — Uses s3Service.fetch() to retrieve and parse JSON
 
 ---
 
@@ -157,14 +157,6 @@ reading file content, parsing to JSON type.
 uploading the-phoenix-test-sample.json to bucket: the-phoenix-test-etty
 S3Service/upload start
 send command to AWS
-(node:15544) Warning: NodeDeprecationWarning: The AWS SDK for JavaScript (v3) will
-no longer support Node.js v18.15.0 in January 2026.
-
-To continue receiving updates to AWS services, bug fixes, and security
-updates please upgrade to a supported Node.js LTS version.
-
-More information can be found at: https://a.co/c895JFp
-(Use `node --trace-warnings ...` to show where the warning was created)
 successfully uploaded to S3
 the-phoenix-test\s3-exercise-1> node src/fetch.js                
 [dotenv@17.3.1] injecting env (3) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
@@ -184,5 +176,6 @@ beutify content is
   "open_position": "AWS Backend Developer"
 }
 ```
+
 
 
